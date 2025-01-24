@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Service Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+         .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1030;
+        }
+        body {
+            background-color: #f8f9fa;
+            
+        }
+        .nav-link{
+            display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: rgb(255 255 255);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+        }
+        .nav-link:hover{
+            background-color: rgb(9, 218, 61);
+             font-size: 18px;
+             
+        }
+        .Service1:hover{
+            background-color: rgb(131, 218, 9);
+             font-size: 18px;
+         }
+        /* a:hover {
+    
+    background-color: rgb(9, 218, 61);
+    font-size: 18px;
+    } */
+
+       
+
+        .hero-section {
+            background-image: url(image2.jpg);
+            /* background-image: url('https://via.placeholder.com/1500x800?text=IT+Service+Management'); */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero-title {
+            color: black;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-subtitle {
+            color: black;
+            font-size: 1.5rem;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .form-container {
+            margin-top: 50px;
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+     <div class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">ITSM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Welcome to IT Service Management</h1>
+            <p class="hero-subtitle">Streamlining IT operations for a better tomorrow</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+     
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+           
+            <div class="row">
+                <div class="col-md-4">
+                    
+                    <div class="card">
+                      <div class="Service1">
+                        <div class="card-body">
+                           
+                            <h5 class="card-title">Service Desk</h5>
+                            <p class="card-text">Efficient ticketing and resolution for IT issues.</p>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+               
+                <div class="col-md-4">
+                    
+                    <div class="card">
+                      <div class="Service1">
+                        <div class="card-body">
+                           
+                            <h5 class="card-title">Asset Management</h5>
+                            <p class="card-text">Efficient ticketing and resolution for IT issues.</p>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    
+                    <div class="card">
+                      <div class="Service1">
+                        <div class="card-body">
+                           
+                            <h5 class="card-title">Incident Management</h5>
+                            <p class="card-text">Efficient ticketing and resolution for IT issues. </p>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+     
+    <section id="contact" class="py-5 bg-light">
+        
+        <div class="container">
+            
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div><img src="IT Service Management.png" alt=""width=500px style="padding: auto;;">
+            <form>
+                
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 IT Service Management. All rights reserved.</p>
+            <p>Designed with ❤ by ClusterWizards Team</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="login.php" method="post">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="loginEmail" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="signup.php" method="post">
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="signupEmail" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
